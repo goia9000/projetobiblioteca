@@ -1,0 +1,177 @@
+:root{
+    --primaria: #F67F31;
+    --secundaria: #483d8d;
+    --texto: #2f2f2f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    color: var(--texto);
+}
+
+#cabecalho{
+    height: 80px;
+    padding: 10px;
+}
+
+#logotipo img{
+    max-width: 200px;
+}
+
+
+#menu ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+#menu ul li a{
+    color: var(--texto);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#botoesCabecalho{
+    text-align: right;
+    line-height: 60px;
+
+}
+#banner {
+    
+    background: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;   
+    position: relative;;
+    
+}
+
+#banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)); 
+    z-index: 1;
+}
+
+
+#banner h2 {
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+#banner p {
+    position: relative;
+    z-index: 2;
+}
+
+#formPesquisa {
+    background: #ffffff;
+    max-width: 600px;
+    font-size: 20px;
+    margin: 0 auto;
+    color: var(--texto);
+    padding: 5px;
+    height: 44px;
+    border-radius: 22px ;
+    position: relative;
+    z-index: 2;
+}
+
+#formPesquisa form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4px;
+}
+
+#formPesquisa form input {
+    border: none;
+
+}
+
+#formPesquisa form button {
+    border: none;
+    background-color: var(--secundaria);
+    color: #ffffff;
+    border-radius:  20px;
+    padding: 2px 15px;
+}
+
+#formPesquisa form i {
+    margin: 0px 10px;
+}
+
+.titulo {
+    border-left: 10px solid var(--secundaria);
+    margin-top: 50px;
+    height: 75px;
+    margin-bottom: 50px;
+}
+
+.titulo h2 {
+    font-weight: bold;
+}
+
+.boxCategoria {
+    text-align: center;
+    
+    border: 2px solid var(--primaria);
+    border-radius: 50%; 
+}
+
+.boxCategoria h3 {
+    font-size: 20px;
+    margin-top:  10px;
+    font-weight: bold;
+}
+
+.boxCategoria img {
+    
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.boxLivros {
+    text-align: center;
+    padding:  10px;
+}
+
+.boxLivros h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    line-height: 26px;
+}
+
+.boxLivros img {
+    height: 250px;
+}
+
+#copyright{
+    background-color: #d6d4d4;
+    text-align: center;
+    padding: 1%;
+    padding-bottom: 0.2%;
+}
